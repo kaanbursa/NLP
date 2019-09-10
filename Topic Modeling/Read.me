@@ -1,0 +1,28 @@
+# Topic Modeling with SVD and NMF
+
+### Singular Value Decomposition
+
+SVD is Matrix Factorization technique used in Topic Modeling for reducing the dimensions of the matrix which represents (Document & Terms). The idea behind SVD is finding words which occur frequently in one topic and does not occur another topic which will give us document specific important words revealing the topic.
+
+The matrix is Document in rows and the vocabulary as columns and occurence value as interseption.
+
+SVD is an exact decomposition meaning that multipling back the matrices again will return the original matrix.
+
+A = U * S * V.T
+
+
+![alt text](https://research.fb.com/wp-content/uploads/2016/11/post00049_image0001.png)
+© Facebook Research
+
+
+### Non-Negative Matrix Factorization
+
+>"Nonnegative matrix factorization (NMF) has become a widely used tool for the analysis of high dimensional data as it automatically extracts sparse and meaningful features from a set of nonnegative data vectors."
+
+NMF approximates a matrix X with low-rank matrix approximation such that X approx. W *H. Where the properties does not have values below 0 which makes it Non-Negative
+
+Also NMF is a non-exact decomposition where if you want to generate original matrix there is an reconstruction error.
+
+![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/NMF.png/400px-NMF.png)
+
+Both techniques extract meaningful words related to the document for person to understand the topic of the document
